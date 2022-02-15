@@ -1,0 +1,297 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _eb2b797d-20200316 OPENFOAM=1812 patch=200312
+Arch   : "LSB;label=32;scalar=64"
+Exec   : multiRegionPhaseChangeFlow
+Date   : Feb 15 2022
+Time   : 22:45:42
+Host   : DESKTOP-RN2826F
+PID    : 29681
+I/O    : uncollated
+Case   : /mnt/d/Prasanna/Thesis/OpenFOAM/Simulations/Thermally_cont_growth/Solver_related_simulation/HenningScheufler_codes/Testing_benchmark_problems/suckingInterface/suckingInterface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create fluid mesh for region fluid for time = 0.1
+
+*** Reading fluid mesh thermophysical properties for region fluid
+
+    Adding to UFluid
+
+    Adding to phiFluid
+
+Selecting phaseModel for water: pureMovingPhaseModel
+Selecting thermodynamics package 
+{
+    type            heRhoThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectFluid;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting phaseModel for air: pureMovingPhaseModel
+Selecting thermodynamics package 
+{
+    type            heRhoThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+    Adding to rhoFluid
+
+    creating surfaceForcesModel 
+
+Selecting surfaceTension model gradAlpha
+Selecting surfaceTension model alphaCSF
+Selecting surfaceTension model gravity
+Selecting advectionSchemes: isoAdvection
+Selecting reconstructionScheme: isoAlpha
+    Adding turbulence 
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+    creating Phase Change Model 
+
+creating models
+creating singleComponentSatProp Model
+Selecting saturation model function
+creating Energy Source Term Model
+Selecting energySourceTermModel model implicitGrad
+creating Mass Source Term Model
+Selecting massSourceTermModel model hardtWondraGasPhase
+    Adding to KFluid
+
+    Adding MRF
+
+No MRF models present
+
+Interface Courant Number mean: 0 max: 0
+Region: fluid Courant Number mean: 0 max: 0
+Capillary Number: 6.7289324e-14
+Reading surface description:
+    constantIso
+
+--> FOAM Warning : 
+Unknown function type fieldIntegrate
+
+Valid function types :
+
+77
+(
+AMIWeights
+CourantNo
+Curle
+DESModelRegions
+Lambda2
+MachNo
+PecletNo
+Q
+XiReactionRate
+add
+blendingFactor
+columnAverage
+components
+ddt
+ddt2
+div
+enstrophy
+externalCoupled
+extractEulerianParticles
+fieldAverage
+fieldCoordinateSystemTransform
+fieldExtents
+fieldMinMax
+fieldValueDelta
+flowType
+flux
+fluxSummary
+grad
+heatTransferCoeff
+histogram
+interfaceEnergyFluxes
+interfaceRegion
+mag
+magSqr
+mapFields
+momentum
+nearWallFields
+particleDistribution
+patchProbes
+pressure
+probes
+processorField
+psiReactionThermoMoleFractions
+psiReactionsSensitivityAnalysis
+psiSpecieReactionRates
+randomise
+readFields
+reference
+regionSizeDistribution
+rhoReactionThermoMoleFractions
+rhoReactionsSensitivityAnalysis
+rhoSpecieReactionRates
+setFlow
+sets
+stabilityBlendingFactor
+streamFunction
+streamLine
+subtract
+superHeated
+surfMeshes
+surfaceFieldValue
+surfaceInterpolate
+surfaces
+thermalResiduals
+turbulenceFields
+valueAverage
+volFieldValue
+volumeFractionError
+vorticity
+wallBoundedStreamLine
+wallHeatFlux
+wallHeatFluxSolid
+wallShearStress
+writeCellCentres
+writeCellVolumes
+yPlus
+zeroGradient
+)
+
+
+
+    From function static Foam::autoPtr<Foam::functionObject> Foam::functionObject::New(const Foam::word&, const Foam::Time&, const Foam::dictionary&)
+    in file db/functionObjects/functionObject/functionObject.C at line 113.
+    From function bool Foam::functionObjectList::read()
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 817
+    
+--> while loading function object 'intPsi'
+
+--> FOAM Warning : 
+Unknown function type fieldIntegrate
+
+Valid function types :
+
+77
+(
+AMIWeights
+CourantNo
+Curle
+DESModelRegions
+Lambda2
+MachNo
+PecletNo
+Q
+XiReactionRate
+add
+blendingFactor
+columnAverage
+components
+ddt
+ddt2
+div
+enstrophy
+externalCoupled
+extractEulerianParticles
+fieldAverage
+fieldCoordinateSystemTransform
+fieldExtents
+fieldMinMax
+fieldValueDelta
+flowType
+flux
+fluxSummary
+grad
+heatTransferCoeff
+histogram
+interfaceEnergyFluxes
+interfaceRegion
+mag
+magSqr
+mapFields
+momentum
+nearWallFields
+particleDistribution
+patchProbes
+pressure
+probes
+processorField
+psiReactionThermoMoleFractions
+psiReactionsSensitivityAnalysis
+psiSpecieReactionRates
+randomise
+readFields
+reference
+regionSizeDistribution
+rhoReactionThermoMoleFractions
+rhoReactionsSensitivityAnalysis
+rhoSpecieReactionRates
+setFlow
+sets
+stabilityBlendingFactor
+streamFunction
+streamLine
+subtract
+superHeated
+surfMeshes
+surfaceFieldValue
+surfaceInterpolate
+surfaces
+thermalResiduals
+turbulenceFields
+valueAverage
+volFieldValue
+volumeFractionError
+vorticity
+wallBoundedStreamLine
+wallHeatFlux
+wallHeatFluxSolid
+wallShearStress
+writeCellCentres
+writeCellVolumes
+yPlus
+zeroGradient
+)
+
+
+
+    From function static Foam::autoPtr<Foam::functionObject> Foam::functionObject::New(const Foam::word&, const Foam::Time&, const Foam::dictionary&)
+    in file db/functionObjects/functionObject/functionObject.C at line 113.
+    From function bool Foam::functionObjectList::read()
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 817
+    
+--> while loading function object 'intPsiSource'
+
+Interface Courant Number mean: 0 max: 0
+Region: fluid Courant Number mean: 0 max: 0
+Capillary Number: 6.7289324e-14
+deltaT = 1.2e-11
+Time = 0.1
+
+
+Solving for fluid region fluid
+Reading thermophysical properties
+
+Time = 0.1
+
+isoAdvection: After conservative bounding: min(alpha) = 0, max(alpha) = 1 + 0
+Phase-1 volume fraction = 0.95238095  Min(alpha.water) = 0  Max(alpha.water) - 1 = 0
+isoAdvection: After conservative bounding: min(alpha) = 0, max(alpha) = 1 + 0
+Phase-1 volume fraction = 0.95238095  Min(alpha.water) = 0  Max(alpha.water) - 1 = 0
+DILUPBiCGStab:  Solving for Ux:  solution singularity

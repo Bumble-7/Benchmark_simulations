@@ -1,0 +1,83 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _eb2b797d-20200316 OPENFOAM=1812 patch=200312
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh -region fluid
+Date   : Feb 15 2022
+Time   : 22:45:40
+Host   : DESKTOP-RN2826F
+PID    : 29671
+I/O    : uncollated
+Case   : /mnt/d/Prasanna/Thesis/OpenFOAM/Simulations/Thermally_cont_growth/Solver_related_simulation/HenningScheufler_codes/Testing_benchmark_problems/suckingInterface/suckingInterface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+Generating mesh for region fluid
+Creating block mesh from
+    "/mnt/d/Prasanna/Thesis/OpenFOAM/Simulations/Thermally_cont_growth/Solver_related_simulation/HenningScheufler_codes/Testing_benchmark_problems/suckingInterface/suckingInterface/system/fluid/blockMeshDict"
+No non-linear block edges defined
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Reading patches section
+
+Creating block mesh topology
+
+Reading physicalType from existing boundary file
+
+Default patch type set to empty
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 0.001
+    Block 0 cell size :
+        i : 5.25e-05 .. 5.25e-05
+        j : 0.0001 .. 0.0001
+        k : 0.0001 .. 0.0001
+
+
+There are no merge patch pairs
+
+Writing polyMesh with 0 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (-0.0005 0 -5e-05) (0.01 0.0001 5e-05)
+  nPoints: 804
+  nCells: 200
+  nFaces: 1001
+  nInternalFaces: 199
+----------------
+Patches
+----------------
+  patch 0 (start: 199 size: 1) name: faceWall
+  patch 1 (start: 200 size: 1) name: outlet
+  patch 2 (start: 201 size: 800) name: frontAndBack
+
+End
+

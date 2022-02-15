@@ -1,0 +1,33 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _eb2b797d-20200316 OPENFOAM=1812 patch=200312
+Arch   : "LSB;label=32;scalar=64"
+Exec   : setFieldfromTable -region fluid
+Date   : Feb 15 2022
+Time   : 22:45:40
+Host   : DESKTOP-RN2826F
+PID    : 29674
+I/O    : uncollated
+Case   : /mnt/d/Prasanna/Thesis/OpenFOAM/Simulations/Thermally_cont_growth/Solver_related_simulation/HenningScheufler_codes/Testing_benchmark_problems/suckingInterface/suckingInterface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh fluid for time = 0
+
+Reading field T.water
+maxDistValue field 1e+15
+minDistValue field -1e+15
+Reading distance function
+write field T.water
+End
+
